@@ -3,7 +3,7 @@
 A **Spring MVC + Hibernate + JSP** web application for managing products.
 
 > ⚠️ **Work in Progress** – currently supports **adding products** and **viewing the product list only**.  
-> Edit/Delete functionality, search/filter, authentication, and responsive UI are **under development**.
+> Edit/Delete functionality **under development**.
 
 ---
 
@@ -23,9 +23,7 @@ A **Spring MVC + Hibernate + JSP** web application for managing products.
 ## 🛠️ Planned Features
 
 - Edit products  
-- Delete products  
-- Search/filter products  
-- User authentication  
+- Delete products    
 - Responsive UI with better styling  
 
 ---
@@ -44,7 +42,7 @@ A **Spring MVC + Hibernate + JSP** web application for managing products.
 
 ## ⚙️ How to Run Locally
 
-1. **Open the project in your IDE** (Eclipse, IntelliJ IDEA, or VS Code).  
+1. **Open the project in your IDE** (Eclipse).  
 2. **Setup MySQL database**:
 
 ```sql
