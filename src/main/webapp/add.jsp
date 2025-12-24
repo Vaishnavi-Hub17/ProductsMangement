@@ -80,6 +80,9 @@ button:hover {
             <label>Image Link</label>
             <input type="url" name="imageLink" placeholder="Enter image URL" required>
 
+               <label>Price</label>
+            <input type="number" name="price"  required>
+            
             <label>Rating (1–10)</label>
             <input type="number" name="rating" min="1" max="10" required>
 

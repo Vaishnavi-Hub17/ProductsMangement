@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page isELIgnored="false" %>
+    <%@ page isELIgnored="false" %>
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Edit Products</title>
+<title>Add Product</title>
 
 <style>
 body {
@@ -24,21 +24,21 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Heading */
+
 h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #0d6efd;
 }
 
-/* Labels */
+
 label {
     display: block;
     margin-top: 12px;
     font-weight: bold;
 }
 
-/* Inputs */
+
 input {
     width: 100%;
     padding: 10px;
@@ -48,13 +48,13 @@ input {
     font-size: 14px;
 }
 
-/* Button */
+
 button {
     width: 100%;
     margin-top: 20px;
     padding: 12px;
-    background-color: #ffc107;
-    color: #212529;
+    background-color: #28a745;
+    color: white;
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #e0a800;
+    background-color: #218838;
 }
 </style>
 
@@ -72,26 +72,26 @@ button:hover {
 
 <div align="center">
     <div class="container">
-        <h1>✏️ Edit Product</h1>
+        <h1>Enter Products Details</h1>
 
-        <form action="editMovie" method="post">
-
-            <!-- Hidden ID (important for update) -->
-            <input type="hidden" name="movieId" value="${movie.id}">
-
-            <label>Product Name</label>
-            <input type="text" name="movieName" value="${movie.name}" required>
+        <form action="add" method="post">
+        <input type="hidden" name="id" value="${product.id}">
+            <label>Products Name</label>
+            <input type="text" name="name" value="${product.name}" >
 
             <label>Image Link</label>
-            <input type="url" name="imageLink" value="${movie.imageLink}" required>
+            <input type="url" name="imageLink" value="${product.imageLink}">
 
+               <label>Price</label>
+            <input type="number" name="price" value="${product.price}" >
+            
             <label>Rating (1–10)</label>
-            <input type="number" name="rating" value="${movie.rating}" min="1" max="10" required>
+            <input type="number" name="rating" min="1" max="10" value="${product.rating }">
 
             <label>Review</label>
-            <input type="text" name="genre" value="${movie.genre}" required>
+            <input type="text" name="review" value="${product.review}">
 
-            <button type="submit">Update Product</button>
+            <button type="submit">Update</button>
         </form>
     </div>
 </div>

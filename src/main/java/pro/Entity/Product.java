@@ -15,4 +15,5 @@ public class Product {
 	private String imageLink;
 	private String rating;
 	private String review;
+	private String price;
 }

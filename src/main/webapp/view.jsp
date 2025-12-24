@@ -80,6 +80,7 @@ img {
     <tr>
         <th>Product</th>
         <th>Image</th>
+         <th>Price</th>
         <th>Rating</th>
         <th>Review</th>
         <th>Action</th>
@@ -91,11 +92,12 @@ img {
       <tr>
         <td><%=product.getName() %></td>
         <td><img height="100px" width="100px" src="<%=product.getImageLink()%>"></td>
+        <td><%=product.getPrice() %></td>
         <td><%=product.getRating() %></td>
         <td><%=product.getReview() %></td>
         <td>
-        <button>Edit</button>
-        <button>Delete</button>
+         <a href="edit?id=<%=product.getId() %>"><button>Edit</button></a> 
+       <a href="delete?id=<%=product.getId() %>"><button>Delete</button></a> 
         </td>
     </tr>
         <%
