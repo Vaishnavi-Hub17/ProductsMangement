@@ -87,11 +87,9 @@ button:hover {
             
             <label>Rating (1–10)</label>
             <input type="number" name="rating" min="1" max="10" value="${product.rating }">
-
             <label>Review</label>
             <input type="text" name="review" value="${product.review}">
-
-            <button type="submit">Update</button>
+            <button type="submit">Updated</button>
         </form>
     </div>
 </div>

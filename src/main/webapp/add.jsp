@@ -89,7 +89,7 @@ button:hover {
             <label>Review</label>
             <input type="text" name="review" required>
 
-            <button type="submit">Add Product</button>
+            <button type="submit">Products</button>
         </form>
     </div>
 </div>

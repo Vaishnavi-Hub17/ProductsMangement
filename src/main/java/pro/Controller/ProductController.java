@@ -49,8 +49,7 @@ public class ProductController {
 		map.put("product", product);
 		return "edit.jsp";
 	}
-
-	@PostMapping("/update")
+@PostMapping("/update")
 	public String update(Product product,ModelMap map) {
 		productDoa.update(product);
 		map.put("message", "Data Updated Success");

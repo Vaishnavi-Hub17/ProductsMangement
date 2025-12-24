@@ -71,8 +71,6 @@ a button:hover {
             <button>View Products</button>
         </a>
     </div>
-
 </div>
-
 </body>
 </html>

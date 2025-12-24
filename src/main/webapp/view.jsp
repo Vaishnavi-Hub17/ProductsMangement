@@ -104,8 +104,6 @@ img {
         }
         %>
 </table>
-
 </div>
-
 </body>
 </html>
