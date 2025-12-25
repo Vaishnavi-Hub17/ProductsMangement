@@ -52,7 +52,12 @@ Create a MySQL database (optional – Hibernate can auto-create):
 ```sql
 CREATE DATABASE product_db;
 
+
+
+
+
 🏗️ Project Structure
+
 
 Product/
 │
@@ -84,3 +89,21 @@ Product/
 │
 ├── pom.xml
 └── README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
