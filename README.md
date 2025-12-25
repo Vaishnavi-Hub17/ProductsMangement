@@ -1,75 +1,86 @@
-# 🌟 Product Management Application (Work in Progress)
+# 🛒 Product Management Application
 
-A **Spring MVC + Hibernate + JSP** web application for managing products.
+A **Spring MVC + Hibernate + JSP** based web application for managing products with full **CRUD operations**.
 
-> ⚠️ **Work in Progress** – currently supports **adding products** and **viewing the product list only**.  
-> Edit/Delete functionality **under development**.
-
----
-
-## 🎯 Features (Implemented)
-
-- Add new products with:
-  - Name  
-  - Image URL  
-  - Rating  
-  - Review
-- View all products in a clean, styled table.
-- Hibernate automatically creates/updates the database table.
-- Simple JSP frontend.
+This project was developed as part of learning **Spring MVC architecture**, **Hibernate (JPA)**, and **MySQL integration**.
 
 ---
 
-## 🛠️ Planned Features
+## 📌 Project Status
 
-- Edit products  
-- Delete products    
-- Responsive UI with better styling  
-
----
-
-## 💻 Technologies Used
-
-- **Java 21**  
-- **Spring MVC 6.x**  
-- **Hibernate 6.x (JPA)**  
-- **MySQL 8.x**  
-- **JSP / HTML / CSS**  
-- **Maven**  
-- **Tomcat 11**  
+✅ Core CRUD functionality completed (Add, View, Edit, Delete)  
+🎨 UI/UX improvements will be added as learning progresses  
+📚 Further enhancements will be implemented under faculty guidance  
 
 ---
 
-## ⚙️ How to Run Locally
+## ✨ Features
 
-1. **Open the project in your IDE** (Eclipse).  
-2. **Setup MySQL database**:
+- Add new products
+- View all products
+- Edit existing product details
+- Delete products
+- Hibernate auto table creation
+- JSP-based frontend
+- MVC architecture followed
+
+---
+
+## 🛠️ Technologies Used
+
+- **Java 17**
+- **Spring MVC**
+- **Hibernate 6 (JPA)**
+- **MySQL 8**
+- **JSP / HTML / CSS**
+- **Maven**
+- **Apache Tomcat 11**
+
+---
+
+## ⚙️ How to Run the Project
+
+### 1️⃣ Open Project
+Open the project in **Eclipse / IntelliJ IDEA** as a **Maven Project**.
+
+---
+
+### 2️⃣ Database Setup
+
+Create a MySQL database (optional – Hibernate can auto-create):
 
 ```sql
 CREATE DATABASE product_db;
 
+🏗️ Project Structure
 
-
-ProductApp/
+Product/
 │
-├─ src/main/java/pro/
-│   ├─ Config/
-│   │   ├─ MyConfig.java
-│   │   └─ MyDispatcher.java
-│   ├─ Controller/
-│   │   └─ ProductController.java
-│   ├─ dao/
-│   │   └─ ProductDoa.java
-│   └─ Entity/
-│       └─ Product.java
+├── src/main/java/pro/
+│   ├── Config/
+│   │   ├── MyConfig.java
+│   │   └── MyDispatcher.java
+│   │
+│   ├── Controller/
+│   │   └── ProductController.java
+│   │
+│   ├── dao/
+│   │   └── ProductDoa.java
+│   │
+│   └── Entity/
+│       └── Product.java
 │
-├─ src/main/resources/META-INF/
-│   └─ persistence.xml
+├── src/main/resources/
+│   └── META-INF/
+│       └── persistence.xml
 │
-├─ src/main/webapp/WEB-INF/views/
-│   ├─ main.jsp
-│   ├─ add.jsp
-│   └─ view.jsp
+├── src/main/webapp/
+│   └── WEB-INF/
+│       └── views/
+│           ├── main.jsp
+│           ├── add.jsp
+│           ├── edit.jsp
+│           └── view.jsp
 │
-├─ pom.xml
-└─ README.md
+├── pom.xml
+└── README.md
