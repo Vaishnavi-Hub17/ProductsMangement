@@ -19,7 +19,7 @@ package pro.dao;
 		
 		public void save(Product product) {
 		et.begin();
-		em.merge(product);
+		em.persist(product);
 		et.commit();
 	}
 

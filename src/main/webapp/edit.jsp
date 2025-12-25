@@ -74,7 +74,7 @@ button:hover {
     <div class="container">
         <h1>Enter Products Details</h1>
 
-        <form action="add" method="post">
+        <form action="update" method="post">
         <input type="hidden" name="id" value="${product.id}">
             <label>Products Name</label>
             <input type="text" name="name" value="${product.name}" >
