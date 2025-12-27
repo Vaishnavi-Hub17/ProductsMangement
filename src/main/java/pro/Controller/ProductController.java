@@ -6,7 +6,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import pro.Entity.Product;
 import pro.dao.ProductDoa;
@@ -26,10 +26,10 @@ public class ProductController {
 		return "add.jsp";
 	}
 	@PostMapping("/add")
-	public String add(Product product,ModelMap map) {
+	public String add(Product product,RedirectAttributes attributes) {
 		productDoa.save(product);
-		map.put("message", "Data Added Success");
-		return "main.jsp";
+		attributes.addFlashAttribute("message", "Data Added Success");
+		return "redirect:/add";
 	}
 
 	@GetMapping("/manage")
@@ -38,10 +38,10 @@ public class ProductController {
 		return "view.jsp";
 	}
 	@GetMapping("/delete")
-	public String delete(@RequestParam("id")Long id, ModelMap map) {
+	public String delete(@RequestParam("id")Long id, RedirectAttributes attributes) {
 		productDoa.deleteById(id);
-		map.put("message", "Record Deleted Success");
-		return "main.jsp";
+		attributes.addFlashAttribute("message", "Record Deleted Success");
+		return "redirect:/manage";
 	}
 	@GetMapping("/edit")
 	public String loadEdit(@RequestParam("id")Long id, ModelMap map) {
@@ -50,9 +50,9 @@ public class ProductController {
 		return "edit.jsp";
 	}
 @PostMapping("/update")
-	public String update(Product product,ModelMap map) {
+	public String update(Product product,RedirectAttributes attributes) {
 		productDoa.update(product);
-		map.put("message", "Data Updated Success");
-		return "main.jsp";
+		attributes.addFlashAttribute("message", "Data Updated Success");
+		return "redirect:/manage";
 }
 }

@@ -75,7 +75,7 @@ img {
 <h1>Product List</h1>
 
 <div align="center">
-
+<h3>${message}</h3>
 <table>
     <tr>
         <th>Product</th>
